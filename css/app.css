@@ -44,6 +44,14 @@ a {
     font-weight: 900;
 }
 
+.change__difficulty {
+    font-size: 30px;
+}
+
+#difficulty__grade {
+    font-size: 20px;
+}
+
 #play__button {
     padding: 10px 30px;
     font-size: 30px;
@@ -84,4 +92,16 @@ a {
 
 .bg__blue {
     background-color: cornflowerblue;
+}
+
+.grid__container.grid__hard {
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.grid__container.grid__normal {
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.grid__container.grid__easy {
+    grid-template-columns: repeat(7, 1fr);
 }
