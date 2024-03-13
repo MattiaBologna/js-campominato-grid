@@ -1,0 +1,63 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* STYLE */
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header */
+.page__header {
+    height: 100px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 100px;
+    flex-grow: 0;
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+}
+
+.header__link > * {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.header__title {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#play__button {
+    padding: 10px 30px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+
+
+/* Main */
+
+.page__content {
+    background-color: #7FFFD4;
+    flex-grow: 1;
+}
+
+.page__footer {
+    height: 50px;
+}
