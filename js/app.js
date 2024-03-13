@@ -42,10 +42,13 @@ playButtonDOMElement.addEventListener('click', function() {
 
         // aggiungere la classe relativa alla difficoltà corrente per scegliere quante colonne avere
         if (size === 10) {
+            gridContainerDOMElement.classList.remove('grid__hard', 'grid__normal', 'grid__easy')
             gridContainerDOMElement.classList.add('grid__hard')
         } else if (size === 9) {
+            gridContainerDOMElement.classList.remove('grid__hard', 'grid__normal', 'grid__easy')
             gridContainerDOMElement.classList.add('grid__normal')
         } else if (size === 7) {
+            gridContainerDOMElement.classList.remove('grid__hard', 'grid__normal', 'grid__easy')
             gridContainerDOMElement.classList.add('grid__easy')
         }
 
