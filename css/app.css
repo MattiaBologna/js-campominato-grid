@@ -81,3 +81,7 @@ a {
     align-items: center;
     justify-content: center;
 }
+
+.bg__blue {
+    background-color: cornflowerblue;
+}

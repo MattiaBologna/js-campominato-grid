@@ -14,13 +14,20 @@ playButtonDOMElement.addEventListener('click', function() {
 
     // generare le celle 
     for (let i = 0; i < numberOfCells; i++) {
+        // segnare il numero delle celle
         const cellNumber = i + 1 
         const cellsDOMELement = document.createElement('div')
+        // aggiungere alle celle create la classe cell e il numero della cella 
         cellsDOMELement.className = 'cell'
         cellsDOMELement.innerHTML = cellNumber
 
+        // aggiungere le celle all'html
         gridContainerDOMElement.append(cellsDOMELement)
         // console.log(cellsDOMELement);
+
+        cellsDOMELement.addEventListener('click', function(){
+            this.classList.toggle('bg__blue')
+        })
     }
 })
 
